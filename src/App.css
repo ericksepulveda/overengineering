@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+html, body, #root, .container {
+  height: 100%;
+}
+
+.grid {
+  background-color: gray;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 10% 35% 10% 35% 10%;
+}
+
+.mesa-1 {
+  background-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: gray;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+}
+
+.mesa-2 {
+  background-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: gray;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: grid;
+}
+
+.puesto {
+  padding: 7vh 2vw;
+  text-align: center;
+  display: table-cell;
+  font-family: Papyrus, bold;
+  /* font-family: 'Rammetto One', cursive; */
+  font-size: 24px;
+}
+
+.fila {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.banio {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  color: red;
+  font-size: 32;
+}
+
+.button {
+  position: fixed;
+  top: 46vh;
+  right: 42vw;
+  height: 8vh;
+  background-color: #a01127;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 16vw;
+  font-family: "Comic Sans MS", "Comic Sans";
+}
